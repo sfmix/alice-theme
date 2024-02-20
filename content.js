@@ -14,7 +14,6 @@ Alice.updateContent({
       ["asn", "AS12276"],
       ["community", 63055, 1000, 1],
       ["community", 63055, 1900, 0],
-      ["community", 63055, 1900, 1],
       ["community", 63055, 1900, 2],
       ["community", 63055, 1984, 1],
       ["community", 63055, 1984, 3],
