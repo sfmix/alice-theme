@@ -67,6 +67,9 @@ background-blend-mode: lighten, lighten, lighten;
 .label-bgp-community-0-63055.label-bgp-community-1-1900.label-bgp-community-2-2 {
   background-color: red;
 }
+.label-bgp-community-0-63055.label-bgp-community-1-1984 {
+  background-color: blue;
+}
 
 
 /* RPKI */
