@@ -17,7 +17,6 @@ Alice.updateContent({
       ["community", 63055, 1900, 1],
       ["community", 63055, 1900, 2],
       ["community", 63055, 1984, 1],
-      ["community", 63055, 1984, 2],
       ["community", 63055, 1984, 3],
       ["q", "SFMIX"],
     ]
