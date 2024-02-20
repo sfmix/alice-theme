@@ -1,21 +1,52 @@
 
-/*
- * Alice Example Theme
- * -------------------
- *
- * Just some minor style changes.
- */
+:root {
+  --sfmix-purple: #4b1781;
+  --rs-name: #e01717;
+  --rs-status: white;
 
+  --rpki-valid: #78c800;
+  --rpki-unknown: #ff9f00;
+  --rpki-invalid: #ff273c;
+}
 .page-sidebar {
-  background: #1b6c8f;
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgb(1, 2, 5),
+      rgba(0, 0, 255, 0.246) 500px,
+      rgba(0, 0, 255, 0.246) 100%
+    ), url("/theme/SFMIX-logo.png");
+  background-repeat: repeat-y;
+}
+.page-sidebar h2 {
+  color: #ffffff;
+}
+.page-sidebar .routeservers-list .routeserver-id {
+  color: var(--rs-name);
+  font-weight: bold;
+  font-size: medium;
+}
+.page-sidebar .routeservers-list .routeserver-status .bird-version {
+  color: var(--rs-status);
+  font-size: small;
 }
 
 .page-sidebar .sidebar-header {
-  background: #f0ad4e;
+  background-image:
+  linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(229, 229, 229, 0.3)), /* Your gradient or solid color background */
+  url('/theme/noise.png'),
+  linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(229, 229, 229, 0.3)); /* Your gradient or solid color background */
+/* Define how each layer repeats */
+background-repeat: repeat, repeat, repeat, no-repeat;
+/* Positioning for each layer */
+background-position: 0 0, 0 0, 0 0, 0 0;
+/* Size for each layer - adjust based on your design */
+background-size: auto, auto, auto, cover;
+/* Opacity adjustments for each noise layer */
+background-blend-mode: lighten, lighten, lighten;
 }
-
-.page-sidebar .sidebar-header .logo a {
-  color: #222;
+.logo-image {
+  width: 8em;
 }
 
 .page-sidebar .sidebar-header .title h1,
@@ -25,4 +56,36 @@
 
 .page-sidebar .sidebar-header .title h1 {
   font-weight: bold;
+}
+
+.label-bgp-community-0-63055.label-bgp-community-1-1900.label-bgp-community-2-0 {
+  background-color: var(--sfmix-purple);
+}
+.label-bgp-community-0-63055.label-bgp-community-1-1900.label-bgp-community-2-1 {
+  background-color: green;
+}
+.label-bgp-community-0-63055.label-bgp-community-1-1900.label-bgp-community-2-2 {
+  background-color: red;
+}
+
+
+/* RPKI */
+.label-bgp-community-0-63055.label-bgp-community-1-1000.label-bgp-community-2-1,
+.label-bgp-community-0-64512.label-bgp-community-1-51 {
+  background-color: var(--rpki-valid);
+}
+.label-bgp-community-0-63055.label-bgp-community-1-1000.label-bgp-community-2-2,
+.label-bgp-community-0-64512.label-bgp-community-1-52 {
+  background-color: var(--rpki-unknown);
+}
+.label-bgp-community-0-63055.label-bgp-community-1-1000.label-bgp-community-2-3 {
+  background-color: var(--rpki-not-performed);
+}
+.label-bgp-community-0-63055.label-bgp-community-1-1000.label-bgp-community-2-4,
+.label-bgp-community-0-64512.label-bgp-community-1-53 {
+  background-color: var(--rpki-invalid);
+}
+
+.select-bgp-community-0-63055.select-bgp-community-1-1900.select-bgp-community-0 {
+  color: var(--sfmix-purple);
 }
