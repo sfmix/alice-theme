@@ -6,7 +6,7 @@ Alice.updateContent({
       logo: '<img class="logo-image" src="/theme/SFMIX-logo.png" />',
   },
   welcome: {
-      title: "SFMIX Route Browser",
+      title: '<a href="https://sfmix.org/">SFMIX</a> Route Browser',
       tagline: 'powered by the <a href="https://github.com/alice-lg/alice-lg">Alice open source Looking Glass</a>'
   },
   lookup: {
